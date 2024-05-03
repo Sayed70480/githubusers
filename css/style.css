@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(98, 120, 244, 0.493);
+}
+html{
+    font-size: 62.24;
+}
+
+.serach-header{
+    background: black;
+}
+
+#form{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(129, 148, 254, 0.493);
+}
+
+input{
+    background: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+button {
+    padding: 4px;
+    width: 70px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: white;
+}
