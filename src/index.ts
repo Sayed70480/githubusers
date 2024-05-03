@@ -25,18 +25,18 @@
   function showResultUI(singleUser: userData) {
     const { location, login, avatar_url, url } = singleUser;
    
-    main_container.insertAdjacentHTML(
-      "beforeend", `
-      <div class="card">
-        <img src=${avatar_url} alt=${login}/> <!-- Inserting user avatar image -->
-        <hr/> <!-- Horizontal line -->
-        <div>
-          <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image again -->
-          <a href="${url}"> GitHub </a> <!-- Link to user's GitHub profile -->
-        </div>
-      </div>
-      `
-    );
+    // main_container.insertAdjacentHTML(
+    //   "beforeend", `
+    //   <div class="card">
+    //     <img src=${avatar_url} alt=${login}/> <!-- Inserting user avatar image -->
+    //     <hr/> <!-- Horizontal line -->
+    //     <div>
+    //       <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image again -->
+    //       <a href="${url}"> GitHub </a> <!-- Link to user's GitHub profile -->
+    //     </div>
+    //   </div>
+    //   `
+    // );
 
   }
 
