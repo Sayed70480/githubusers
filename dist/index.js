@@ -14,10 +14,10 @@ function showResultUI(singleUser) {
     const { location, login, avatar_url, url } = singleUser;
     main_container.insertAdjacentHTML("beforeend", `
       <div class="card">
-        <img src=${avatar_url} alt=${login}/> <!-- Inserting user avatar image -->
+        <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image -->
         <hr/> <!-- Horizontal line -->
-        <div>
-          <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image again -->
+        <div class="footer">
+          <img src="${avatar_url}" alt="${login}" class="small-img"/> <!-- Inserting user avatar image again -->
           <a href="${url}"> GitHub </a> <!-- Link to user's GitHub profile -->
         </div>
       </div>
@@ -35,3 +35,6 @@ async function fetchUserData(url) {
     }
 }
 fetchUserData("https://api.github.com/users");
+formSubmit.addEventListener("submit", (e) => {
+    e.preventDefault();
+});

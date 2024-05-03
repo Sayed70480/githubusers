@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(98, 120, 244, 0.493);
+    background: rgba(43, 53, 83, 0.493);
 }
 html{
     font-size: 62.24;
+}
+
+img{
+    height: 27vh;
+    width: 100%;
 }
 
 .serach-header{
@@ -18,7 +23,7 @@ html{
     justify-content: center;
     gap: 20px;
     padding: 15px;
-    background: rgba(129, 148, 254, 0.493);
+    background: rgba(42, 43, 48, 0.493);
 }
 
 input{
@@ -37,4 +42,58 @@ button {
     border: 1px solid black;
     border-radius: 3px;
     background: white;
+    cursor: pointer;
 }
+
+.main_container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding-top: 20px;
+}
+
+.card{
+    /* border: 2px solid red; */
+    
+    width: 17%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.card:hover{
+    margin-top: -10px;
+    box-shadow: 20px white;
+    border-radius: 10px;
+   
+}
+
+.small-img{
+    height: 3vh;
+    width: 1.2rem;
+    border-radius: 15px;
+}
+
+.footer{
+    /* border: 2px solid green; */
+    padding: 12px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+    margin-top: -10px;
+    border-radius: 10px;
+    box-shadow: 0 0  50px rgba(255, 255, 255, 0.5);
+}
+a{
+    color: white;
+    text-decoration: none;
+    background: black;
+    font-size: 12px;
+}
+
+
+

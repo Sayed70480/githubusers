@@ -2,7 +2,6 @@
   const userName = document.querySelector("#user") as HTMLInputElement;
   const formSubmit = document.querySelector("#form") as HTMLFormElement;
   const main_container = document.querySelector(".main_container") as HTMLElement;
-
   interface userData {
     id: number;
     login: string;
@@ -25,18 +24,19 @@
   function showResultUI(singleUser: userData) {
     const { location, login, avatar_url, url } = singleUser;
    
-    // main_container.insertAdjacentHTML(
-    //   "beforeend", `
-    //   <div class="card">
-    //     <img src=${avatar_url} alt=${login}/> <!-- Inserting user avatar image -->
-    //     <hr/> <!-- Horizontal line -->
-    //     <div>
-    //       <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image again -->
-    //       <a href="${url}"> GitHub </a> <!-- Link to user's GitHub profile -->
-    //     </div>
-    //   </div>
-    //   `
-    // );
+    main_container.insertAdjacentHTML(
+      "beforeend", `
+      <div class="card">
+        <img src="${avatar_url}" alt="${login}"/> <!-- Inserting user avatar image -->
+        <hr/> <!-- Horizontal line -->
+        <div class="footer">
+          <img src="${avatar_url}" alt="${login}" class="small-img"/> <!-- Inserting user avatar image again -->
+          <a href="${url}"> GitHub </a> <!-- Link to user's GitHub profile -->
+        </div>
+      </div>
+      `
+    );
+    
 
   }
 
@@ -53,3 +53,7 @@
 
   fetchUserData("https://api.github.com/users");
 
+  formSubmit.addEventListener("submit" ,(e)=>{
+    e.preventDefault()
+
+  })
